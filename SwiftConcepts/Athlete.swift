@@ -9,5 +9,20 @@
 import Cocoa
 
 class Athlete: NSObject {
-
+    var Name:String;
+    var Age:Int;
+    
+    override init(){
+        self.Name = "";
+        self.Age = 0;
+    }
+    
+    init(name:String, age:Int){
+        self.Age = age;
+        self.Name = name;
+    }
+    
+    deinit {
+        <#statements#>
+    }
 }
