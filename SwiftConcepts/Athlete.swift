@@ -23,6 +23,25 @@ class Athlete: NSObject {
     }
     
     deinit {
-        <#statements#>
+        print("\(self.Name) is being deinitialized");
     }
+    
+    func calculateIMC(weight: Float, heigh: Float){
+        let imc = weight / (heigh * weight);
+        let formated = String(format: "%0.2", imc)
+    }
+        
+    func calculateIMC2(weight: Float, heigh: Float) -> Float{
+        return weight / pow(heigh,2);
+    }
+    
+    func showAthlete()-> String{
+        return "The athlete is " + self.Name;
+    }
+    
+    class func Alert() -> String{
+        return "The competition is about to start in 10 min";
+    }
+    
+    
 }
